@@ -1,14 +1,3 @@
----
-title: "trial"
-author: "Masha"
-date: "5/13/2020"
-output: 
- md_document:
-    variant: markdown_github
----
-
-
-
 R Markdown
 ----------
 
@@ -53,4 +42,3 @@ ggplot(data=NutritionData)+
 ```
 
 ![](trial_files/figure-markdown_github/unnamed-chunk-2-1.png)
-

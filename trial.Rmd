@@ -1,0 +1,36 @@
+---
+title: "trial"
+author: "Masha"
+date: "5/13/2020"
+output: 
+ md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r}
+library(ggplot2)
+NutritionData = NutritionData <- read.csv("C:/Users/fb8502oa/Desktop/Github stuff/TRIAL-/NutritionData.csv")
+#View(NutritionData1)
+ names (NutritionData)
+ str(NutritionData)
+```
+
+```{r}
+#question 4
+#4.	Create a scatterplot of total fat by saturated fat for each type.  Also, color the points according to location.
+ggplot(data=NutritionData)+
+  geom_point(mapping = aes(x=SatFat, y=TotalFat,color=Location))+
+  facet_wrap(. ~ Type, ncol=4)
+
+```
+
+
+
+
